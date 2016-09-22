@@ -1,0 +1,67 @@
+/* TOP TITLE SPECIFIC */
+#statement {
+    text-align: center;
+    width: 100%;
+}
+
+#icons {
+    min-width: 150px;
+    text-align: center;
+}
+
+#icons > a {
+    margin: 7px;
+}
+
+#statement, #icons {
+    color: white;
+}
+
+/* PARALLAX MOD */
+.in-front { 
+    /* DO NOT CHANGE - needed to bring content above parallax level 
+    to use: apply only to the first child div within .parallax */
+    position: relative;
+    z-index: 1000;
+}
+
+.parallax > img {
+    /* DO NOT CHANGE NOR USE - needed to resize image */
+    height: 1000px;
+    width: auto;
+}
+
+.parallax-container {
+    /* DO NOT CHANGE NOR USE - needed to set z-index of parallax (to lowest) */
+    z-index: 0;
+}
+
+/* TYPED.JS REQ CSS */
+.element {
+    text-align: center;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
