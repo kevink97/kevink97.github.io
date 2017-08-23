@@ -123,8 +123,7 @@
 }
 
 .card-image > img {
-	max-height: 400px;
-	width: 50%;
+	max-width: 100%;
 }
 
 .card-title {
@@ -136,6 +135,7 @@
 }
 .card-image {
 	overflow: hidden;
+	height: 145px;
 }
 .card img {
 	transition: 0.2s -webkit-filter linear;
@@ -144,9 +144,7 @@
 
 .card:hover img {
 	transition: 0.2s -webkit-filter linear;
-	-webkit-filter: blur(1.2px);
-	max-width: 100%;
-	height: auto;
+	-webkit-filter: blur(1.7px);
 }
 
 .tech, .fa, a, .card-action>i {
