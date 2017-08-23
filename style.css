@@ -86,6 +86,8 @@
 .in-front {
 	position: relative;
 	z-index: 1000;
+	padding-top: 60px;
+	padding-bottom: 20px;
 }
 
 /* main area */
@@ -114,30 +116,43 @@
 	font-weight: bolder;
 }
 
-.card-action>i {
-	color: black;
-}
-
 .card-action {
 	text-align: center;
 	display: block;
 	max-width: 100%;
 }
 
-.card-action>i:hover {
-	color: #00bfa5;
+.card-image > img {
+	max-height: 400px;
+	width: 50%;
 }
 
-
-/* PARALLAX MOD */
-/* NOT IN USE ANYMORE
-
-.parallax>img {
-	height: 1000px;
-	width: auto;
+.card-title {
+	text-shadow: 1.5px 1.5px 10px #000000;
 }
 
-.parallax-container {
-	z-index: 0;
+.c-cont {
+	padding-bottom: 35px;
 }
-*/
+.card-image {
+	overflow: hidden;
+}
+.card img {
+	transition: 0.2s -webkit-filter linear;
+	-webkit-filter: blur(6px);
+}
+
+.card:hover img {
+	transition: 0.2s -webkit-filter linear;
+	-webkit-filter: blur(1.2px);
+	max-width: 100%;
+	height: auto;
+}
+
+.tech, .fa, a, .card-action>i {
+	color: #FF9E80;
+}
+
+.tech:hover, .fa:hover, a:hover, .card-action:hover>i {
+	color: #FF6E40;
+}
